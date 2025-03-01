@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="mx-8">
+    <!-- navbar -->
+    <div class="navbar bg-base-100 shadow-sm">
+        <div class="flex-1">
+          <a class="btn btn-ghost text-xl">
+            <img src="./assets/logo.png" alt="Logo" class="h-8 w-8 mr-2">
+            Dev<span class="font-bold">Board</span></a>
+        </div>
+        <div class="flex">
+           <section class="flex p-2 mr-4 gap-1">
+               <input class="bg-[#3752FD] text-white" type="checkbox" checked="checked" class="checkbox" />
+               <p class="font-bold">23</p>
+           </section>
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <div class="indicator">
+                <button id = "navbar-btn">
+                  <img src="./assets/theme-btn.png" alt="" >
+                </button>
+              </div>
+            </div>
+              </div>
+            </div>
+          </div>
+          <section class="section_container flex">
+            <section class="m-14 flex-col ">
+              <div class="flex">
+               <div class = flex justify-between gap-10 >
+                  <input class="bg-[#3752FD] text-white w-6" type="checkbox" checked="checked" class="checkbox" />
+                  <div class="px-5 ">
+                      <h3 class="text-base">Task Assigned</h3>
+                      <h2 class="font-bold text-3xl">05</h2>
+                    </div>
+                    <div class="bg-linear-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl w-[450px]">
+                      <button class="flex py-10 px-5 gap-10">
+                        <img class = "w-9 " src="./assets/board.png" alt="">
+                        <h1 class="text-white text-2xl font-medium text-justify">Discover Something <br>New Today!</h1>
+                      </button>
+                    </div>
+                    <div class = "Calender-container flex gap-4">
+                      <img class = "w-8 h-8 my-3" src="./assets/calender.png" alt="">
+                      <div id="date_container"></div>
+                    </div>
+              </div>
+              </div>
+            <!-- Cards -->
+             <div>
+              <div class="card bg-base-100 w-96 shadow-sm">
+                <div class="card-body">
+                  <h2 class="card-title">Card title!</h2>
+                  <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+             </div>
+              
+              
+              <div class="card w-96 bg-base-100 card-sm shadow-sm">
+                <div class="card-body">
+                  <h2 class="card-title">Small Card</h2>
+                  <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                  <div class="justify-end card-actions">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card w-96 bg-base-100 card-md shadow-sm">
+                <div class="card-body">
+                  <h2 class="card-title">Medium Card</h2>
+                  <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                  <div class="justify-end card-actions">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card w-96 bg-base-100 card-lg shadow-sm">
+                <div class="card-body">
+                  <h2 class="card-title">Large Card</h2>
+                  <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                  <div class="justify-end card-actions">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card w-96 bg-base-100 card-xl shadow-sm">
+                <div class="card-body">
+                  <h2 class="card-title">Xlarge Card</h2>
+                  <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                  <div class="justify-end card-actions">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+             </div>
+            
+          </section>
+          <section class="mx-auto">
+            <div class="log_container">
+              <div class="log flex gap-2 text-xl">
+                <img src="./assets/activity.png" alt="">
+                <h1 class="text-xl">Activity Log</h1>
+              </div>
+              <button class="bg-[#3752FD] text-white px-[20px] py-[10px] rounded-lg mt-4">Clear History</button>
+            </div>
+          </section>
+          </section>
+    
+  
+    
+</body>
+<script src="./scripts/dev.js"></script>
+<script src="./scripts/day.js"></script>
+</html>
