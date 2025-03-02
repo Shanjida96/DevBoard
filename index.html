@@ -21,8 +21,8 @@
         </div>
         <div class="flex">
            <section class="flex p-2 mr-4 gap-1">
-               <input class="bg-[#3752FD] text-white" type="checkbox" checked="checked" class="checkbox" />
-               <p class="font-bold">23</p>
+               <input class="bg-[#3752FD] text-white w-6" type="checkbox" checked="checked" class="checkbox" />
+               <p class="font-bold text-3xl">0</p>
            </section>
           <div class="dropdown dropdown-end">
             <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
@@ -35,97 +35,156 @@
               </div>
             </div>
           </div>
-          <section class="section_container flex">
-            <section class="m-14 flex-col ">
-              <div class="flex">
-               <div class = flex justify-between gap-10 >
-                  <input class="bg-[#3752FD] text-white w-6" type="checkbox" checked="checked" class="checkbox" />
-                  <div class="px-5 ">
-                      <h3 class="text-base">Task Assigned</h3>
-                      <h2 class="font-bold text-3xl">05</h2>
-                    </div>
-                    <div class="bg-linear-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl w-[450px]">
-                      <button class="flex py-10 px-5 gap-10">
-                        <img class = "w-9 " src="./assets/board.png" alt="">
-                        <h1 class="text-white text-2xl font-medium text-justify">Discover Something <br>New Today!</h1>
-                      </button>
-                    </div>
-                    <div class = "Calender-container flex gap-4">
-                      <img class = "w-8 h-8 my-3" src="./assets/calender.png" alt="">
-                      <div id="date_container"></div>
-                    </div>
-              </div>
-              </div>
-            <!-- Cards -->
-             <div>
-              <div class="card bg-base-100 w-96 shadow-sm">
-                <div class="card-body">
-                  <h2 class="card-title">Card title!</h2>
-                  <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
+          <main>
+            <section class="section_container flex">
+              <div class="m-14">
+                <div class="flex ">
+                 <div class = "flex gap-10" >
+                    <input class="bg-[#3752FD] text-white w-6" type="checkbox" checked="checked" class="checkbox" />
+                    <div class="px-5 ">
+                        <h3 class="text-base">Task Assigned</h3>
+                        <h2 class="font-bold text-3xl">05</h2>
+                      </div>
+                      <div class="bg-linear-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl w-[450px]">
+                        <button class="flex py-10 px-5 gap-10">
+                          <img class = "w-9 " src="./assets/board.png" alt="">
+                          <h1 class="text-white text-2xl font-medium text-justify">Discover Something <br>New Today!</h1>
+                        </button>
+                      </div>
+                      <div class = "Calender-container flex gap-4">
+                        <img class = "w-8 h-8 my-3" src="./assets/calender.png" alt="">
+                        <div id="date_container"></div>
+                      </div>
+                </div>
+                </div>
+              <!-- Cards-->
+               <div class="p-[24px] grid grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="card bg-base-100 w-96 shadow-sm w-[340px] h-[320px]">
+                  <div class="card-body">
+                    <h3 class="text-base px-[16px] py-2">ShopEase</h3>
+                    <h2 class="card-title text-2xl font-medium ">Fix Mobile Button Issue</h2>
+                    <p class ="truncate text-black/50 text-base my-[32px]" style=" max-width: 200px;">Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly
+                      and ensure onClick works properly</p>
+                      <div class="flex justify-between items-center">
+                        <div>
+                          <p class="text-black/70 text-sm">Deadline</p>
+                          <p class="text-base font-medium">21 March 2025</p>
+                        </div>
+                        <div class="card-actions justify-end">
+                          <button class="btn btn-primary">Completed</button>
+                        </div>
+                      </div>
                   </div>
                 </div>
-              </div>
-             </div>
-              
-              
-              <div class="card w-96 bg-base-100 card-sm shadow-sm">
-                <div class="card-body">
-                  <h2 class="card-title">Small Card</h2>
-                  <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                  <div class="justify-end card-actions">
-                    <button class="btn btn-primary">Buy Now</button>
+                <!-- Card  2-->
+                <div class="card bg-base-100 w-96 shadow-sm w-[340px] h-[320px]">
+                  <div class="card-body">
+                    <h3 class="text-base px-[16px] py-2">CloudSync</h3>
+                    <h2 class="card-title text-2xl font-medium ">Add Dark Mode</h2>
+                    <p class ="truncate text-black/50 text-base my-[32px]" style=" max-width: 200px;">Store the user's preference in <br>localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                      <div class="flex justify-between items-center">
+                        <div>
+                          <p class="text-black/70 text-sm">Deadline</p>
+                          <p class="text-base font-medium">21 March 2025</p>
+                        </div>
+                        <div class="card-actions justify-end">
+                          <button class="btn btn-primary">Completed</button>
+                        </div>
+                      </div>
                   </div>
                 </div>
-              </div>
-              
-              <div class="card w-96 bg-base-100 card-md shadow-sm">
-                <div class="card-body">
-                  <h2 class="card-title">Medium Card</h2>
-                  <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                  <div class="justify-end card-actions">
-                    <button class="btn btn-primary">Buy Now</button>
+                <!-- Card 3 -->
+                <div class="card bg-base-100 w-96 shadow-sm w-[340px] h-[320px]">
+                  <div class="card-body">
+                    <h3 class="text-base px-[16px] py-2">SwiftPay</h3>
+                    <h2 class="card-title text-2xl font-medium ">Optimize  Home Page</h2>
+                    <p class ="truncate text-black/50 text-base my-[32px]" style=" max-width: 200px;">Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly
+                      and ensure onClick works properly</p>
+                      <div class="flex justify-between items-center">
+                        <div>
+                          <p class="text-black/70 text-sm">Deadline</p>
+                          <p class="text-base font-medium">21 March 2025</p>
+                        </div>
+                        <div class="card-actions justify-end">
+                          <button class="btn btn-primary">Completed</button>
+                        </div>
+                      </div>
                   </div>
                 </div>
-              </div>
-              
-              <div class="card w-96 bg-base-100 card-lg shadow-sm">
-                <div class="card-body">
-                  <h2 class="card-title">Large Card</h2>
-                  <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                  <div class="justify-end card-actions">
-                    <button class="btn btn-primary">Buy Now</button>
+                <!-- Card 4 -->
+                <div class="card bg-base-100 w-96 shadow-sm w-[340px] h-[320px]">
+                  <div class="card-body">
+                    <h3 class="text-base px-[16px] py-2">Meta</h3>
+                    <h2 class="card-title text-2xl font-medium ">Add new emoji</h2>
+                    <p class ="truncate text-black/50 text-base my-[32px]" style=" max-width: 200px;">Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly
+                      and ensure onClick works properly</p>
+                      <div class="flex justify-between items-center">
+                        <div>
+                          <p class="text-black/70 text-sm">Deadline</p>
+                          <p class="text-base font-medium">21 March 2025</p>
+                        </div>
+                        <div class="card-actions justify-end">
+                          <button class="btn btn-primary">Completed</button>
+                        </div>
+                      </div>
                   </div>
                 </div>
-              </div>
-              
-              <div class="card w-96 bg-base-100 card-xl shadow-sm">
-                <div class="card-body">
-                  <h2 class="card-title">Xlarge Card</h2>
-                  <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                  <div class="justify-end card-actions">
-                    <button class="btn btn-primary">Buy Now</button>
+                <!-- Card 5-->
+                <div class="card bg-base-100 w-96 shadow-sm w-[340px] h-[320px]">
+                  <div class="card-body">
+                    <h3 class="text-base px-[16px] py-2">Google LLC</h3>
+                    <h2 class="card-title text-2xl font-medium ">Integrate OpenAI API</h2>
+                    <p class ="truncate text-black/50 text-base my-[32px]" style=" max-width: 200px;">Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly
+                      and ensure onClick works properly</p>
+                      <div class="flex justify-between items-center">
+                        <div>
+                          <p class="text-black/70 text-sm">Deadline</p>
+                          <p class="text-base font-medium">21 March 2025</p>
+                        </div>
+                        <div class="card-actions justify-end">
+                          <button class="btn btn-primary">Completed</button>
+                        </div>
+                      </div>
                   </div>
                 </div>
+                <!-- Card 6 -->
+                <div class="card bg-base-100 w-96 shadow-sm w-[340px] h-[320px]">
+                  <div class="card-body">
+                    <h3 class="text-base px-[16px] py-2">Glassdoor</h3>
+                    <h2 class="card-title text-2xl font-medium">Improve Job searching</h2>
+                    <p class ="truncate text-black/50 text-base my-[32px]" style=" max-width: 200px;">Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly
+                      and ensure onClick works properly</p>
+                      <div class="flex justify-between items-center">
+                        <div>
+                          <p class="text-black/70 text-sm">Deadline</p>
+                          <p class="text-base font-medium">21 March 2025</p>
+                        </div>
+                        <div class="card-actions justify-end">
+                          <button class="btn btn-primary">Completed</button>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                
+               </div>
+                
+               </div>
+              
               </div>
-             </div>
-            
-          </section>
-          <section class="mx-auto">
-            <div class="log_container">
-              <div class="log flex gap-2 text-xl">
-                <img src="./assets/activity.png" alt="">
-                <h1 class="text-xl">Activity Log</h1>
+            <div class="mx-auto">
+              <div class="log_container">
+                <div class="log flex gap-2 text-xl">
+                  <img src="./assets/activity.png" alt="">
+                  <h1 class="text-xl">Activity Log</h1>
+                </div>
+                <button class="bg-[#3752FD] text-white px-[20px] py-[10px] rounded-lg mt-4">Clear History</button>
               </div>
-              <button class="bg-[#3752FD] text-white px-[20px] py-[10px] rounded-lg mt-4">Clear History</button>
             </div>
-          </section>
-          </section>
-    
-  
-    
+            </section>
+          </main>  
 </body>
 <script src="./scripts/dev.js"></script>
-<script src="./scripts/day.js"></script>
+<script src="./scripts/blog.js"></script>
+
 </html>
