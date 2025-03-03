@@ -38,13 +38,16 @@
           <main>
             <section class="section_container flex">
               <div class="m-14">
-                <div class="flex ">
-                 <div class = "flex gap-10" >
-                    <input class="bg-[#3752FD] text-white w-6" type="checkbox" checked="checked" class="checkbox" />
-                    <div class="px-5 ">
-                        <h3 class="text-base">Task Assigned</h3>
-                        <h2 class="font-bold text-3xl">05</h2>
-                      </div>
+                 <div class = "flex gap-10 justify-between">
+                  <div class="flex gap-1">
+                    <div>
+                       <input class="bg-[#3752FD] text-white w-8 h-8 text-center" type="checkbox" checked="checked" class="checkbox" />
+                    </div>
+                      <div class="px-5 ">
+                          <h3 class="text-base">Task Assigned</h3>
+                          <h2 class="font-bold text-3xl">05</h2>
+                        </div>
+                  </div>
                       <div class="bg-linear-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl w-[450px]">
                         <button id="Discover_btn" class="cursor-pointer py-10 px-5 gap-10">
                           <img class = "w-9 " src="./assets/board.png" alt="">
@@ -55,7 +58,6 @@
                         <img class = "w-8 h-8 my-3" src="./assets/calender.png" alt="">
                         <div id="date_container"></div>
                       </div>
-                </div>
                 </div>
               <!-- Cards-->
                <div class="p-[24px] grid grid-cols-3 gap-6">
@@ -189,7 +191,7 @@
           </main>  
 </body>
 <script src="./scripts/dev.js"></script>
-<script src="./scripts/blog.js"></script>
+<script src="./scripts/indexToBlog.js"></script>
 <script src="./scripts/button.js"></script>
 <script src="./scripts/common.js"></script>
 </html>

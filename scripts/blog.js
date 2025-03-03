@@ -1,4 +1,4 @@
-document.getElementById("Discover_btn")
+document.getElementById("Desk")
 .addEventListener("click", function(){
-    window.location.href= "../blog.html"
+    window.location.href= "../index.html"
 });
