@@ -118,7 +118,7 @@ function addMessage1(){
 
     const titleContent = document.querySelectorAll(".card-title");
     // console.log(titleContent);
-    const title = titleContent.innerText;
+    const title = titleContent.innerHTML.value;
     const p1 = document.createElement('p');
     p1.innerHTML= `
       <p>You have completed the task ${title} at ${hour}:${minute}:${second} ${AP}</p>
