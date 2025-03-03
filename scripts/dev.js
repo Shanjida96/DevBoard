@@ -1,12 +1,30 @@
 // date
 const currentDate = new Date();
-// console.log(currentDate);
+
 
 let day = currentDate.getDay();
 let date = currentDate.getDate();
 let month = currentDate.getMonth() ;
 let year = currentDate.getFullYear()
-// console.log(day,date, month, year);
+let hour = currentDate.getHours();
+let minute = currentDate.getMinutes();
+let second = currentDate.getSeconds();
+
+let AP = "AM";
+
+if(hour >= 12){
+    AP = "PM";
+}
+else if(hour < 12){
+    AP = "AM";
+}
+if(hour%12===0){
+    hour = 12;
+}
+else {
+    hour = hour%12;
+}
+
 function getDay(day){
     let Day = "Sun";
     if(day === 0){
@@ -94,5 +112,27 @@ p.innerHTML = `
    `;
 
 container.appendChild(p);
-console.log(container);
+
+ 
+function addMessage1(){
+
+    const titleContent = document.querySelectorAll(".card-title");
+    // console.log(titleContent);
+    const title = titleContent.innerText;
+    const p1 = document.createElement('p');
+    p1.innerHTML= `
+      <p>You have completed the task ${title} at ${hour}:${minute}:${second} ${AP}</p>
+    
+    `;
+    const m_container = document.getElementById("message_container");
+    m_container.appendChild(p1);
+    console.log(title);
+}
+
+function clearMessage(){
+    const m_container = document.getElementById("message_container");
+    m_container.innerHTML = "";
+    console.log(m_container);
+}
+document.getElementById("Clear_btn").addEventListener('click',clearMessage);
 

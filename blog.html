@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    
+    <!-- Navbar -->
+        <div class="navbar bg-base-100 shadow-sm">
+            <div class="navbar-start">
+              
+              <a class="btn btn-ghost text-xl">
+                <img src="./assets/logo.png" alt="Logo" class="h-8 w-8 mr-2">
+                Dev<span class="font-bold">Board</span>
+              </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              
+            </div>
+            <div class="navbar-end">
+              <btn class="btn btn-primary">Back To Desk</btn>
+            </div>
+          </div>
+          <main class="mx-auto">
+            <h2 class="text-center font-bold text-2xl">Blogs</h2>
+            <div class="collapse bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-1" checked="checked" />
+                <div class="collapse-title font-semibold">Question 1:What are the different ways to select an element in the DOM?</div>
+                <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
+              </div>
+              <div class="collapse bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-1" />
+                <div class="collapse-title font-semibold">Question 2: What is the difference between innerHTML, innerText and textContent</div>
+                <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
+              </div>
+              <div class="collapse bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-1" />
+                <div class="collapse-title font-semibold">What is event delegation in the DOM?</div>
+                <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+              </div>
+              <div class="collapse bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-1" />
+                <div class="collapse-title font-semibold">What is event bubling in the DOM?</div>
+                <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+              </div>
+          </main>
 </body>
 </html>
